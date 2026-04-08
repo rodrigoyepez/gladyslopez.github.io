@@ -1,7 +1,7 @@
 const CONTACT = {
   email: "gacevedo@worldbank.org",
   whatsapp: "",        // e.g. "12025551234" — add her number if desired
-  linkedin: "https://www.linkedin.com/in/gladys-lopez-acevedo",
+  linkedin: "https://www.linkedin.com/in/gladyslopezacevedoo/",
   scholar: "https://scholar.google.com/citations?user=Cb2thP0AAAAJ&hl=en",
   worldbank: "https://www.worldbank.org/en/about/people/g/gladys-lopez-acevedo",
   repec: "https://authors.repec.org/pro/plo382",

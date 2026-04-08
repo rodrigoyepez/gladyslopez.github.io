@@ -4,13 +4,6 @@
 
 const PHOTO_URL = "/images/Mom_photo.webp";
 
-const STATS = [
-  { value: "25+", label: "Years of Experience" },
-  { value: "80+", label: "Publications" },
-  { value: "15+", label: "Countries Studied" },
-  { value: "4",   label: "Flagship Reports" },
-];
-
 const RESEARCH_THEMES = [
   { label: "Jobs & Labor Markets", page: "publications" },
   { label: "Gender Economics", page: "publications" },
@@ -19,13 +12,12 @@ const RESEARCH_THEMES = [
   { label: "MENA", page: "publications" },
   { label: "Latin America", page: "publications" },
 ];
+
 const BIO_PARAGRAPHS = [
-  `I am the Global Lead for the Distributional Impacts of Markets and Institutions at the World Bank. I am a global economist with over twenty-five years at the World Bank, including service as Deputy Chief Economist for South Asia and Lead Economist for the Middle East and North Africa. My work combines rigorous analytical expertise with deep operational experience across all lending instruments (DPF, IPF, PforR) and strong corporate leadership.`,
-
-  `I lead the Global Solutions Group on Jobs, guiding the Bank's analytical and operational agenda on distributional impacts of shocks and policy across regions, and provide senior technical leadership to Poverty and Equity Assessments, Jobs Diagnostics, and Growth and Jobs Reports worldwide. My research and operational work focus on jobs, inequality, gender, and structural transformation, with an emphasis on inclusion, digital and green transitions, and fiscal policy.`,
-
-  `Over my career, I have authored more than twenty books and one hundred peer-reviewed publications, and led over thirty operations and major multi-country initiatives, regional strategies, and institutional reforms. I previously served as a senior official in Mexico's Ministry of Finance and Ministry of Social Development, where I designed and implemented major national social programs and labor market reforms. I have also held academic appointments at Instituto Tecnológico Autónomo de México and Centro de Investigación y Docencia Económicas. I hold a Ph.D. in Economics from the University of Virginia and am fully proficient in English, Spanish, French, and Portuguese.`,
+  `Global economist with senior experience at the World Bank and in government roles in Mexico. I have served as Deputy Chief Economist for South Asia, Lead Economist for South Asia and the Middle East and North Africa, and Global Lead for Distributional Impacts of Markets and Institutions and Senior Data Researcher combining rigorous analysis with operational leadership across all lending instruments, major multi-country initiatives, regional strategies, and institutional reforms.`,
+  `Before joining the World Bank, I held senior positions in Mexico's Ministry of Finance and Ministry of Social Development, helping design and implement economic and social policy at the national level. Fluent in English, Spanish, French, and Portuguese.`,
 ];
+
 const CONTACT = {
   institution: "World Bank HQ (office MC 10-139)",
   address: "1818 H Street, N.W.",
@@ -49,12 +41,11 @@ export default function Home() {
       <style>{`
         @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
         @keyframes fadeInLeft { from { opacity: 0; transform: translateX(-16px); } to { opacity: 1; transform: translateX(0); } }
-        .stat-card:hover { transform: translateY(-3px); }
         .theme-tag:hover { background: #7e6e52 !important; color: #fff !important; cursor: default; }
       `}</style>
 
-      {/* ── NAME + SUBTITLE + STATS ── */}
-      <div style={{ background: "#7e6e52", padding: "1.8rem 2rem 1.4rem" }}>
+      {/* ── NAME + SUBTITLE ── */}
+      <div style={{ background: "#7e6e52", padding: "1.8rem 2rem" }}>
         <div style={{ maxWidth: 860, margin: "0 auto" }}>
           <h1 style={{
             fontFamily: "'Playfair Display', serif",
@@ -65,22 +56,12 @@ export default function Home() {
             Gladys Lopez-Acevedo
           </h1>
           <p style={{
-            fontSize: 13, color: "rgba(255,255,255,0.75)", letterSpacing: "0.1em",
-            textTransform: "uppercase", fontWeight: 500, marginBottom: "1.4rem",
+            fontSize: 11, color: "rgba(255,255,255,0.75)", letterSpacing: "0.1em",
+            textTransform: "uppercase", fontWeight: 500, marginBottom: "1rem",
           }}>
-            Lead Economist · World Bank · South Asia Chief Economist Office
+            Global Lead, Distributional Impacts of Markets and Institutions · Senior Data Researcher · The World Bank Group
           </p>
-          <div style={{
-            borderTop: "1px solid rgba(255,255,255,0.2)", paddingTop: "1.2rem",
-            display: "grid", gridTemplateColumns: "repeat(4, 1fr)", gap: "1rem",
-          }}>
-            {STATS.map((s, i) => (
-              <div key={i} className="stat-card" style={{ textAlign: "center", transition: "transform 0.2s" }}>
-                <div style={{ fontFamily: "'Playfair Display', serif", fontSize: "1.8rem", color: "#fff", fontWeight: 600 }}>{s.value}</div>
-                <div style={{ fontSize: 11, color: "rgba(255,255,255,0.75)", letterSpacing: "0.08em", textTransform: "uppercase", marginTop: 2 }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
+          <div style={{ borderBottom: "1px solid rgba(255,255,255,0.3)", marginTop: "0.2rem" }} />
         </div>
       </div>
 
