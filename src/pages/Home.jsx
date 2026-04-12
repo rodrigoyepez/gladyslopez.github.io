@@ -19,12 +19,13 @@ const BIO_PARAGRAPHS = [
 ];
 
 const CONTACT = {
-  institution: "World Bank HQ (office MC 10-139)",
+  institution: "The World Bank",
   address: "1818 H Street, N.W.",
   cityStateZip: "Washington, D.C., 20433",
-  email: "gacevedo@worldbank.org",
   scholarUrl: "https://scholar.google.com/citations?user=Cb2thP0AAAAJ&hl=en",
-  ssrnUrl: "#",
+  worldbankUrl: "https://www.worldbank.org/en/about/people/g/gladys-lopez-acevedo",
+  linkedinUrl: "https://www.linkedin.com/in/gladyslopezacevedoo",
+  repecUrl: "https://authors.repec.org/pro/plo382/",
 };
 
 const LATEST_WORK = {
@@ -114,9 +115,10 @@ export default function Home() {
             {CONTACT.institution}<br />
             {CONTACT.address}<br />
             {CONTACT.cityStateZip}
-            <a className="contact-link" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+            <a className="contact-link" href={CONTACT.worldbankUrl} target="_blank" rel="noreferrer">World Bank Profile</a>
+            <a className="contact-link" href={CONTACT.linkedinUrl} target="_blank" rel="noreferrer">LinkedIn</a>
             <a className="contact-link" href={CONTACT.scholarUrl} target="_blank" rel="noreferrer">Google Scholar</a>
-            <a className="contact-link" href={CONTACT.ssrnUrl} target="_blank" rel="noreferrer">SSRN / IDEAS</a>
+            <a className="contact-link" href={CONTACT.repecUrl} target="_blank" rel="noreferrer">RePEC / IDEAS</a>
           </div>
         </div>
 
