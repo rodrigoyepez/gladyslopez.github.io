@@ -35,7 +35,7 @@ const LATEST_WORKS = [
   {
     title: "Hooked on Subsidies: Fiscal Costs and the Challenge of Reform",
     url: "https://www.worldbank.org/en/publication/hooked-on-subsidies",
-    year: "2025",
+    year: "2026",
     publisher: "The World Bank",
     coverImage: "/images/Book2.png",
   },
