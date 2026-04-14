@@ -1,20 +1,19 @@
 const CONTACT = {
-  email: "gacevedo@worldbank.org",
-  whatsapp: "",        // e.g. "12025551234" — add her number if desired
-  linkedin: "https://www.linkedin.com/in/gladyslopezacevedoo/",
+  whatsapp: "",
+  linkedin: "https://www.linkedin.com/in/gladyslopezacevedoo",
   scholar: "https://scholar.google.com/citations?user=Cb2thP0AAAAJ&hl=en",
   worldbank: "https://www.worldbank.org/en/about/people/g/gladys-lopez-acevedo",
   repec: "https://authors.repec.org/pro/plo382",
+  twitter: "https://twitter.com/gladyslopezwb",
 };
 
 const ICON_LINKS = [
   {
-    label: "Email",
-    url: `mailto:${CONTACT.email}`,
+    label: "Twitter / X",
+    url: CONTACT.twitter,
     svg: (
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-        <rect x="2" y="4" width="20" height="16" rx="2"/>
-        <polyline points="2,4 12,13 22,4"/>
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.741l7.732-8.855L1.254 2.25H8.08l4.259 5.623 5.905-5.623zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
       </svg>
     ),
   },
