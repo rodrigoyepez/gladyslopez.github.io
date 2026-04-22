@@ -5,8 +5,6 @@ const RESEARCH_THEMES = [
   { label: "Gender Economics", page: "publications" },
   { label: "Trade & Exports", page: "publications" },
   { label: "Poverty & Inequality", page: "publications" },
-  { label: "MENA", page: "publications" },
-  { label: "Latin America", page: "publications" },
 ];
 
 const BIO_PARAGRAPHS = [
